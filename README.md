@@ -9,6 +9,6 @@ In general it would be easier for a python-based client to use the library local
 ## Usage
 Example using curl:
 ```
-% echo "{{"indentifier": ""http://example.com/datasets/1}, "name": {"en": "A dataset}}" > dataset.json
+% echo '{"identifier": "http://example.com/concepts/1", "name": {"en": "concept"}}' > dataset.json
 % curl -i -H "Content-Type: application/json" -d @dataset.json -X POST "http://localhost:8201/dataset"
 ```
